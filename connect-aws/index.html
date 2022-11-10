@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.9" name="generator"/>
-<title>Основные понятия - Документация</title>
+<title>AWS - Документация</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#aws">
           Перейти к содержанию
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Основные понятия
+              AWS
             
           </span>
 </div>
@@ -116,8 +116,8 @@
         Главная
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2">
           Быстрый старт
           <span class="md-nav__icon md-icon"></span>
@@ -148,17 +148,16 @@
         Оптимизация
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../reference/">
         Основные понятия
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
           Подключение облаков
           <span class="md-nav__icon md-icon"></span>
@@ -184,10 +183,47 @@
         VMware Cloud Director
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../connect-aws/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          AWS
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         AWS
       </a>
+<nav aria-label="Содержание раздела" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    Подключение с существующего бакета
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    Подключение с "нуля"
+  </a>
+<nav aria-label="Подключение с " class="md-nav" нуля""="">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#access-key">
+    Как получить Access key
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    Как проверить результат
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../connect-azure/">
@@ -224,38 +260,42 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">Основные термины</h1>
-<dl>
-<dt><code>Подключение облака</code></dt>
-<dd>виртуальная инфраструктура, доступ к которой можно получить при помощи одного набора данных доступа (чаще всего — это: адрес API, логин, пароль).</dd>
-<dt><code>Тенант</code></dt>
-<dd>Clouder поддерживает мультитенантность, т.е. возможноcть изолированно обслуживать пользователей из разных организаций. В текущей реализации один email-адрес может быть иметь доступ только к одному тенанту в Clouder. Пользователь не может использовать один адрес для аутентификации в разных тенантах. Создание тенантов осуществляет служба поддержки.</dd>
-<dt><code>Провайдеры курса валют</code></dt>
-<dd>поддерживаются Центральный банк РФ и сервис OANDA. Данные обновляются ежедневно. Дату и время обновления можно увидеть в меню валюты, доступном по клику по коду валюты в правом верхнем углу.</dd>
-<dt><code>Валюта тенанта</code></dt>
-<dd>встроенный параметр аккаунта организации. Используется для расчета затрат в приватных облаках VMware и OpenStack. Пользователь изменить валюту тенанта не может.</dd>
-<dt><code>Валюта облака</code></dt>
-<dd>валюта, в которой облачный провайдер предоставляет данные о затратах. Пользователь изменить валюту облака не может.</dd>
-<dt><code>Валюта пользователя</code></dt>
-<dd>валюта, в которой пользователь, предпочитает видеть затраты и бюджеты. </dd>
-<dt><code>Демоданные</code></dt>
-<dd>синтетический набор данных и настроек, предназначенный для демонстрации возможностей Coster. Демонстрационные данные автоматически удаляются при подключении первого облака.</dd>
-<dt><code>Бюджет</code></dt>
-<dd>отражение бизнес юнита в структуре облака. Бюджет состоит из области применения (фильтры расходов) и лимита (или сумма бюджета, сумма по отношению, к которой измеряются расходы внутри месяца).</dd>
-<dt><code>Теги</code></dt>
-<dd>атрибут записей биллинга Azure и AWS, по которым можно задавать область применения бюджета.</dd>
-<dt><code>Владелец</code></dt>
-<dd>пользователь Coster, который будет получать уведомления, связанные с бюджетом.</dd>
-<dt><code>Эффективность системы</code></dt>
-<dd>процентное соотношение числа объектов, для которых нет рекомендаций по оптимизации к общему числу объектов в биллинге облаков. Относится к подключениям Azure, AWS.</dd>
-</dl>
+<h1 id="aws">Подключение AWS</h1>
+<p>Coster использует информацию по биллингу, которая собирается при помощи встроенных инструментов AWS в S3 хранилище.</p>
+<h2 id="_1">Подключение с существующего бакета</h2>
+<p>Если у вас настроен сбор биллинга в бакет и вы хотите отобразить информацию в Coster, обратитесь в службу поддержки для индивидуальной настройки подключения.</p>
+<h2 id="_2">Подключение с "нуля"</h2>
+<p>В случае, если в вашем AWS аккаунте еще не настроен сбор биллинговой информации, следуйте инструкции.</p>
+<div class="admonition права">
+<p class="admonition-title">Права</p>
+<p>Вам потребуется IAM пользователь с правами на создание S3 хранилища и доступ к Consumption and Utilization Reports (CUR отчетам). </p>
+<p>Если вы хотите собирать информацию по нескольким аккаунтам, бакет нужно настраивать в аккаунте, которому доверен сбор биллинговой информации других аккаунтов.</p>
+<p>Либо каждый аккаунт нужно будет подключить отдельно.</p>
+</div>
+<p>Coster будет реализовывать создание бакета S3 и настройку отчетов в соответствии с <a href="https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html">инструкцией AWS</a>.</p>
+<h3 id="access-key">Как получить Access key</h3>
+<ol>
+<li>Авторизуйтесь в AWS. </li>
+<li>В меню под логином пользователя выберите Security credentials. </li>
+<li>Нажмите <strong><em>Create access key</em></strong>. Ключ будет состоять из ID и значения ключа. Скопируйте <em>Access key ID</em> и значение <em>Secret access key</em> и вставьте в соответствующие поля. </li>
+</ol>
+<p>Обратите внимание на предупреждение, что возможность увидеть и скопировать <em>Secret access key</em> дается один раз.</p>
+<p>Выберите регион, где будет размещен S3 бакет. Цены за хранение информации различаются в разных регионах. </p>
+<div class="admonition внимание">
+<p class="admonition-title">Внимание</p>
+<p>Стоимость хранения биллинговой информации определяется по тарифам AWS для выбранного региона и появится в счете от AWS.</p>
+</div>
+<h3 id="_3">Как проверить результат</h3>
+<p>Coster создаст в заданном регионе S3 хранилище с именем coster-&lt;номер аккаунта AWS&gt;, а также настроит сбор информации по потреблению, которая будет храниться в вашем облаке. </p>
+<p>Сбор данных в AWS может занять до 24 часов. Рекомендуем проверить результат через сутки после подключения.</p>
+<p>Coster отображет информацию, представленную в биллинговых данных. Если данных по какому-либо аккаунту, организации или ресурсу не хватает, необходимо проверить права AIM пользователя. Специалисты поддержки Cloudmaster смогут вас проконсультировать.</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
 <nav aria-label="Нижний колонтитул" class="md-footer__inner md-grid">
-<a aria-label="Назад: Оптимизация" class="md-footer__link md-footer__link--prev" href="../coster-optimization/" rel="prev">
+<a aria-label="Назад: VMware Cloud Director" class="md-footer__link md-footer__link--prev" href="../connect-cloud-director/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -264,17 +304,17 @@
 <span class="md-footer__direction">
                 Назад
               </span>
-              Оптимизация
+              VMware Cloud Director
             </div>
 </div>
 </a>
-<a aria-label="Вперед: Общий принцип" class="md-footer__link md-footer__link--next" href="../manage-connection/" rel="next">
+<a aria-label="Вперед: Azure" class="md-footer__link md-footer__link--next" href="../connect-azure/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Вперед
               </span>
-              Общий принцип
+              Azure
             </div>
 </div>
 <div class="md-footer__button md-icon">

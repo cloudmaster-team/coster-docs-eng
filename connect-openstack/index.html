@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.9" name="generator"/>
-<title>Основные понятия - Документация</title>
+<title>Подключение OpenStack - Документация</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#openstack">
           Перейти к содержанию
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Основные понятия
+              Подключение OpenStack
             
           </span>
 </div>
@@ -116,8 +116,8 @@
         Главная
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2">
           Быстрый старт
           <span class="md-nav__icon md-icon"></span>
@@ -148,9 +148,8 @@
         Оптимизация
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../reference/">
         Основные понятия
       </a>
 </li>
@@ -224,64 +223,12 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">Основные термины</h1>
-<dl>
-<dt><code>Подключение облака</code></dt>
-<dd>виртуальная инфраструктура, доступ к которой можно получить при помощи одного набора данных доступа (чаще всего — это: адрес API, логин, пароль).</dd>
-<dt><code>Тенант</code></dt>
-<dd>Clouder поддерживает мультитенантность, т.е. возможноcть изолированно обслуживать пользователей из разных организаций. В текущей реализации один email-адрес может быть иметь доступ только к одному тенанту в Clouder. Пользователь не может использовать один адрес для аутентификации в разных тенантах. Создание тенантов осуществляет служба поддержки.</dd>
-<dt><code>Провайдеры курса валют</code></dt>
-<dd>поддерживаются Центральный банк РФ и сервис OANDA. Данные обновляются ежедневно. Дату и время обновления можно увидеть в меню валюты, доступном по клику по коду валюты в правом верхнем углу.</dd>
-<dt><code>Валюта тенанта</code></dt>
-<dd>встроенный параметр аккаунта организации. Используется для расчета затрат в приватных облаках VMware и OpenStack. Пользователь изменить валюту тенанта не может.</dd>
-<dt><code>Валюта облака</code></dt>
-<dd>валюта, в которой облачный провайдер предоставляет данные о затратах. Пользователь изменить валюту облака не может.</dd>
-<dt><code>Валюта пользователя</code></dt>
-<dd>валюта, в которой пользователь, предпочитает видеть затраты и бюджеты. </dd>
-<dt><code>Демоданные</code></dt>
-<dd>синтетический набор данных и настроек, предназначенный для демонстрации возможностей Coster. Демонстрационные данные автоматически удаляются при подключении первого облака.</dd>
-<dt><code>Бюджет</code></dt>
-<dd>отражение бизнес юнита в структуре облака. Бюджет состоит из области применения (фильтры расходов) и лимита (или сумма бюджета, сумма по отношению, к которой измеряются расходы внутри месяца).</dd>
-<dt><code>Теги</code></dt>
-<dd>атрибут записей биллинга Azure и AWS, по которым можно задавать область применения бюджета.</dd>
-<dt><code>Владелец</code></dt>
-<dd>пользователь Coster, который будет получать уведомления, связанные с бюджетом.</dd>
-<dt><code>Эффективность системы</code></dt>
-<dd>процентное соотношение числа объектов, для которых нет рекомендаций по оптимизации к общему числу объектов в биллинге облаков. Относится к подключениям Azure, AWS.</dd>
-</dl>
+<h1 id="openstack">Подключение OpenStack</h1>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
-<nav aria-label="Нижний колонтитул" class="md-footer__inner md-grid">
-<a aria-label="Назад: Оптимизация" class="md-footer__link md-footer__link--prev" href="../coster-optimization/" rel="prev">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
-</div>
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Назад
-              </span>
-              Оптимизация
-            </div>
-</div>
-</a>
-<a aria-label="Вперед: Общий принцип" class="md-footer__link md-footer__link--next" href="../manage-connection/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Вперед
-              </span>
-              Общий принцип
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
-</div>
-</a>
-</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
