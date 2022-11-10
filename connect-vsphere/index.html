@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.9" name="generator"/>
-<title>Подключение VMware vSphere - Документация</title>
+<title>VMware vSphere - Документация</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Подключение VMware vSphere
+              VMware vSphere
             
           </span>
 </div>
@@ -156,8 +156,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
           Подключение облаков
           <span class="md-nav__icon md-icon"></span>
@@ -187,6 +187,34 @@
 <a class="md-nav__link" href="../connect-cloud-director/">
         VMware Cloud Director
       </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          VMware vSphere
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        VMware vSphere
+      </a>
+<nav aria-label="Содержание раздела" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    Настройка цен для расчета
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    Проверка успешности подключения
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../connect-aws/">
@@ -229,11 +257,62 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="vmware-vsphere">Подключение VMware vSphere</h1>
+<p>Поддерживается версия vSphere Client version 7.0.3.00600.</p>
+<p>Для подключения к vSphere потребуется предоставить доступ к API. В случае, если доступ осуществляется через VPN вам может потребоваться помощь системных инженеров. Обратитесь в службу поддержки Cloudmaster.</p>
+<p>Пользователь должен иметь права доступа к VDC и кластерам, по которым требуется собирать информацию.</p>
+<p><img alt="Screenshot" src="../img/cos-connect-vsphere.png"/></p>
+<p>Если проверка подключения прошла успешно, откроется второй шаг. </p>
+<h2 id="_1">Настройка цен для расчета</h2>
+<p>В открывшейся форме необходимо заполнить данные: </p>
+<ul>
+<li>цена за ядро CPU в рабочей машине за сутки, </li>
+<li>цена за Гб RAM в рабочей машине за сутки, </li>
+<li>цена за Гб хранилища, прикрепленного к рабочей машине в сутки. </li>
+</ul>
+<p>Цены указываются в валюте тенанта. Валюта определяется на этапе создания тенанта сотрудником Cloudmaster. </p>
+<p>В общем случае назначается средняя цена за Гб дискового пространства без учета политики хранения (типов дисков).</p>
+<h2 id="_2">Проверка успешности подключения</h2>
+<div class="admonition внимание">
+<p class="admonition-title">Внимание</p>
+<p>Сбор данных по инфраструктуре может занять до 20 минут. </p>
+</div>
+<p>Зайдите на страницу <strong><em>Бюджеты</em></strong>. Кликните <strong><em>Создать бюджет</em></strong>.</p>
+<p><img alt="Screenshot" src="../img/cd-budget-tree.png"/></p>
+<p>В списке должны появиться VDC и кластеры вашего облака.</p>
+<p>Если какого-либо кластера или VDC не было найдено, сообщите об этом службе поддержки.</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
+<nav aria-label="Нижний колонтитул" class="md-footer__inner md-grid">
+<a aria-label="Назад: VMware Cloud Director" class="md-footer__link md-footer__link--prev" href="../connect-cloud-director/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Назад
+              </span>
+              VMware Cloud Director
+            </div>
+</div>
+</a>
+<a aria-label="Вперед: AWS" class="md-footer__link md-footer__link--next" href="../connect-aws/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Вперед
+              </span>
+              AWS
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
