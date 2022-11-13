@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.9" name="generator"/>
-<title>OpenStack - Документация</title>
+<title>OpenStack - Documentation</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#openstack">
+<a class="md-skip" href="#connect-openstack">
           Перейти к содержанию
         </a>
 </div>
@@ -29,7 +29,7 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Верхний колонтитул" class="md-header__inner md-grid">
-<a aria-label="Документация" class="md-header__button md-logo" data-md-component="logo" href=".." title="Документация">
+<a aria-label="Documentation" class="md-header__button md-logo" data-md-component="logo" href=".." title="Documentation">
 <img alt="logo" src="../assets/Coster_logo.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -39,7 +39,7 @@
 <div class="md-header__ellipsis">
 <div class="md-header__topic">
 <span class="md-ellipsis">
-            Документация
+            Documentation
           </span>
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
@@ -105,52 +105,57 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Навигация" class="md-nav md-nav--primary md-nav--integrated" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Документация" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Документация">
+<a aria-label="Documentation" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Documentation">
 <img alt="logo" src="../assets/Coster_logo.svg"/>
 </a>
-    Документация
+    Documentation
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="..">
-        Главная
+        Home
       </a>
 </li>
 <li class="md-nav__item md-nav__item--section md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2">
-          Быстрый старт
+          Quick start
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Быстрый старт" class="md-nav" data-md-level="1">
+<nav aria-label="Quick start" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
-          Быстрый старт
+          Quick start
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../coster-dashboard/">
-        Дашборд
+        Dashboard
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../budgets/">
-        Бюджеты
+        Budgets
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../coster-reports/">
-        Отчеты
+        Reports
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../coster-optimization/">
-        Оптимизация
+        Optimization
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cos-notifications/">
+        Notifications
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../reference/">
-        Основные понятия
+        Reference
       </a>
 </li>
 </ul>
@@ -159,23 +164,28 @@
 <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-          Подключение облаков
+          Connect and manage clouds
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Подключение облаков" class="md-nav" data-md-level="1">
+<nav aria-label="Connect and manage clouds" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          Подключение облаков
+          Connect and manage clouds
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../manage-connection/">
-        Общий принцип
+        Manage cloud connections
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../connect-yandex/">
-        Яндекс Облако
+<a class="md-nav__link" href="../connect-aws/">
+        AWS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../connect-azure/">
+        Azure
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
@@ -194,18 +204,13 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-    Настройка цен для расчета
+<a class="md-nav__link" href="#set-pricing-policy">
+    Set pricing policy
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-    Добавление цен по типам дисков
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-    Проверка успешности подключения
+<a class="md-nav__link" href="#check-connection">
+    Check connection
   </a>
 </li>
 </ul>
@@ -219,16 +224,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../connect-vsphere/">
         VMware vSphere
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../connect-aws/">
-        AWS
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../connect-azure/">
-        Azure
       </a>
 </li>
 </ul>
@@ -261,57 +256,46 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="openstack">Подключение OpenStack</h1>
-<p>Coster поддерживает <em>ванильные</em> версии Stein, Xena и Yoga. В частности Selectel.</p>
-<p>Для подключения необходимо предоставить доступ к API.</p>
-<p>Укажите адрес API и домен. </p>
-<blockquote>
-<p>В случае Selectel домен – это номер вашего аккаунта или договора. 
-Адрес API можно найти в документации провайдера или запросить у службы 
-поддержки Selectel.</p>
-</blockquote>
-<div class="admonition права">
-<p class="admonition-title">Права</p>
-<p>Пользователь от лица, которого будет иметь доступ платофрма, должен иметь доступ ко всем проектам, по которым вы хотите увидеть информацию.</p>
+<h1 id="connect-openstack">Connect OpenStack</h1>
+<p>Coster supports <em>vanilla</em> versions of Stein, Xena, and Yoga.</p>
+<p>To connect, you must provide access to the API.</p>
+<p>Provide the API address and domain. </p>
+<div class="admonition rights">
+<p class="admonition-title">Rights</p>
+<p>The account used by system must have access to all projects for which you want to see information.</p>
 </div>
-<p><img alt="Screenshot" src="../img/cos-connect-openstack-1.png"/></p>
-<p>После проверки данных API откроется второй шаг формы. </p>
-<h2 id="_1">Настройка цен для расчета</h2>
-<p><img alt="Screenshot" src="../img/cos-connect-openstack.png"/></p>
-<p>В открывшейся форме необходимо заполнить данные: </p>
+<p><img alt="Screenshot" src="../img_eng/cos-connect-openstack-1.png"/></p>
+<h2 id="set-pricing-policy">Set pricing policy</h2>
+<p>If the connection was successful, the second step will open. In the form that opens, you must fill in the data: </p>
 <ul>
-<li>цена за ядро CPU в рабочей машине за сутки, </li>
-<li>цена за Гб RAM в рабочей машине за сутки, </li>
-<li>цена за Гб хранилища, прикрепленного к рабочей машине в сутки. </li>
+<li>price per core CPU in the runnig machine per day, </li>
+<li>price per GB of RAM in the running machine per day, </li>
+<li>price per GB of storage attached to the running machine per day. </li>
 </ul>
-<p>Цены указываются в валюте тенанта. Валюта определяется на этапе создания тенанта сотрудником Cloudmaster. </p>
-<p>В общем случае назначается средняя цена за Гб дискового пространства без учета политики хранения (типов дисков, которые чаще всего обозначаются как <code>Gold</code>, <code>Silver</code>).</p>
-<h2 id="_2">Добавление цен по типам дисков</h2>
-<div class="admonition ограничение">
-<p class="admonition-title">Ограничение</p>
-<p>Назначение типов дисков достпно только для инсталляций OpenStack с одним регионом. Понять сколько регионов в вашем подключении можно при создании ВМ. Если при создании ВМ можно выбирать регионы, то работа с типами в Coster будет недоступна. Все диски будут считаться по одной цене. </p>
+<p>Prices are specified in the tenant's currency. Currency is set up when tenant is created by Astrokite team. </p>
+<p>Coster can differentiate OpenStack storage type. At the second step of this wizard, you have the option to add the storage policy type manually - fill in the name, which should exactly match the name on the OpenStack side, or request the data from the provider. When requesting data from the provider, Coster will automatically fetch the storage types from OpenStack. </p>
+<div class="admonition limitation">
+<p class="admonition-title">Limitation</p>
+<p>Assigning disk types is only available for OpenStack installations with a single region. You can figure out how many regions are in your connection when you create a VM. If you can select regions when creating a VM, then working with types in Coster will not be available. All disks will be counted at the same price. </p>
 </div>
-<p>Есть возможность добавить цены для разных типов дисков. Можно автоматически подятнуть названия дисков по клику на <strong><em>Запросить у провайдера</em></strong> или задать вручную. Наименования должны полностью соотвествовать классификации на стороне провайдера OpenStack.</p>
-<p>При использовании классификации дисков необходимо заполнить значения цены для каждого типа. Поле <code>Max размер</code> относится к модулю Clouder и позволяет задавать максимальный размер хранилища каждого типа для подключения. <em>Поле необязательно для заполнения</em>.</p>
-<p><img alt="Screenshot" src="../img/cd-second-step.png"/></p>
-<p>В дальнейшем Clouder будет ориентироваться на указанный объем хранилища и не позволит администраторам создать подписки превышающие в сумме объем по каждому из типов дисков.</p>
-<h2 id="_3">Проверка успешности подключения</h2>
-<div class="admonition внимание">
-<p class="admonition-title">Внимание</p>
-<p>Сбор данных по инфраструктуре может занять до 20 минут. </p>
+<p><em>Maximum storage size</em> is optional, you can leave it empty.</p>
+<p><img alt="Screenshot" src="../img_eng/clr-cd-add-price.png"/></p>
+<h2 id="check-connection">Check connection</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Collecting data on cloud objects can take up to 20 min. </p>
 </div>
-<p>Зайдите на страницу <strong><em>Бюджеты</em></strong>. Кликните <strong><em>Создать бюджет</em></strong>.</p>
-<p>В списке должны появиться <em>Проекты</em> вашего облака.</p>
-<p><img alt="Screenshot" src="../img/cos-openstack-tree.png"/></p>
-<p>Если какой-либо <em>Проект</em> не появился, сообщите об этом в службу поддержки.</p>
-<p>Данные по потреблению виртуальных ресурсов рекомендуем проверить через 24 часа.</p>
+<p>Open <strong><em>Budgets</em></strong>. Click <strong><em>Create budget</em></strong>.</p>
+<p>You should be able to see <em>Projects</em> of your OpenStack cloud.</p>
+<p>If you do not see any of the projects check the settings with Astrokite support team.</p>
+<p>We recommend to check consumption data in 24 hours. </p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
 <nav aria-label="Нижний колонтитул" class="md-footer__inner md-grid">
-<a aria-label="Назад: Яндекс Облако" class="md-footer__link md-footer__link--prev" href="../connect-yandex/" rel="prev">
+<a aria-label="Назад: Azure" class="md-footer__link md-footer__link--prev" href="../connect-azure/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -320,7 +304,7 @@
 <span class="md-footer__direction">
                 Назад
               </span>
-              Яндекс Облако
+              Azure
             </div>
 </div>
 </a>

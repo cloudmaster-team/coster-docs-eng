@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.9" name="generator"/>
-<title>VMware vSphere - Документация</title>
+<title>VMware vSphere - Documentation</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#vmware-vsphere">
+<a class="md-skip" href="#connect-vmware-vsphere">
           Перейти к содержанию
         </a>
 </div>
@@ -29,7 +29,7 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Верхний колонтитул" class="md-header__inner md-grid">
-<a aria-label="Документация" class="md-header__button md-logo" data-md-component="logo" href=".." title="Документация">
+<a aria-label="Documentation" class="md-header__button md-logo" data-md-component="logo" href=".." title="Documentation">
 <img alt="logo" src="../assets/Coster_logo.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -39,7 +39,7 @@
 <div class="md-header__ellipsis">
 <div class="md-header__topic">
 <span class="md-ellipsis">
-            Документация
+            Documentation
           </span>
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
@@ -105,52 +105,57 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Навигация" class="md-nav md-nav--primary md-nav--integrated" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Документация" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Документация">
+<a aria-label="Documentation" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Documentation">
 <img alt="logo" src="../assets/Coster_logo.svg"/>
 </a>
-    Документация
+    Documentation
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="..">
-        Главная
+        Home
       </a>
 </li>
 <li class="md-nav__item md-nav__item--section md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2">
-          Быстрый старт
+          Quick start
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Быстрый старт" class="md-nav" data-md-level="1">
+<nav aria-label="Quick start" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
-          Быстрый старт
+          Quick start
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../coster-dashboard/">
-        Дашборд
+        Dashboard
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../budgets/">
-        Бюджеты
+        Budgets
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../coster-reports/">
-        Отчеты
+        Reports
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../coster-optimization/">
-        Оптимизация
+        Optimization
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cos-notifications/">
+        Notifications
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../reference/">
-        Основные понятия
+        Reference
       </a>
 </li>
 </ul>
@@ -159,23 +164,28 @@
 <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-          Подключение облаков
+          Connect and manage clouds
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Подключение облаков" class="md-nav" data-md-level="1">
+<nav aria-label="Connect and manage clouds" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          Подключение облаков
+          Connect and manage clouds
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../manage-connection/">
-        Общий принцип
+        Manage cloud connections
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../connect-yandex/">
-        Яндекс Облако
+<a class="md-nav__link" href="../connect-aws/">
+        AWS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../connect-azure/">
+        Azure
       </a>
 </li>
 <li class="md-nav__item">
@@ -204,27 +214,17 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-    Настройка цен для расчета
+<a class="md-nav__link" href="#set-pricing-policy">
+    Set pricing policy
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-    Проверка успешности подключения
+<a class="md-nav__link" href="#check-connection">
+    Check connection
   </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../connect-aws/">
-        AWS
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../connect-azure/">
-        Azure
-      </a>
 </li>
 </ul>
 </nav>
@@ -256,30 +256,28 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="vmware-vsphere">Подключение VMware vSphere</h1>
-<p>Поддерживается версия vSphere Client version 7.0.3.00600.</p>
-<p>Для подключения к vSphere потребуется предоставить доступ к API. В случае, если доступ осуществляется через VPN вам может потребоваться помощь системных инженеров. Обратитесь в службу поддержки Cloudmaster.</p>
-<p>Пользователь должен иметь права доступа к VDC и кластерам, по которым требуется собирать информацию.</p>
-<p><img alt="Screenshot" src="../img/cos-connect-vsphere.png"/></p>
-<p>Если проверка подключения прошла успешно, откроется второй шаг. </p>
-<h2 id="_1">Настройка цен для расчета</h2>
-<p>В открывшейся форме необходимо заполнить данные: </p>
+<h1 id="connect-vmware-vsphere">Connect VMware vSphere</h1>
+<p>Supported version vSphere Client version 7.0.3.00600.</p>
+<p>To connect to vSphere, you will need to provide API access. In the case of access via VPN, you may need the help of system engineers. Contact Cloudmaster Support.</p>
+<p>The user must have access rights to the VDC and clusters for which you want to collect information.</p>
+<p><img alt="Screenshot" src="../img_eng/cos-connect-vsphere.png"/></p>
+<h2 id="set-pricing-policy">Set pricing policy</h2>
+<p>If the connection was successful, the second step will open. In the form that opens, you must fill in the data: </p>
 <ul>
-<li>цена за ядро CPU в рабочей машине за сутки, </li>
-<li>цена за Гб RAM в рабочей машине за сутки, </li>
-<li>цена за Гб хранилища, прикрепленного к рабочей машине в сутки. </li>
+<li>price per core CPU in the runnig machine per day, </li>
+<li>price per GB of RAM in the running machine per day, </li>
+<li>price per GB of storage attached to the running machine per day. </li>
 </ul>
-<p>Цены указываются в валюте тенанта. Валюта определяется на этапе создания тенанта сотрудником Cloudmaster. </p>
-<p>В общем случае назначается средняя цена за Гб дискового пространства без учета политики хранения (типов дисков).</p>
-<h2 id="_2">Проверка успешности подключения</h2>
-<div class="admonition внимание">
-<p class="admonition-title">Внимание</p>
-<p>Сбор данных по инфраструктуре может занять до 20 минут. </p>
+<p>Prices are specified in the tenant's currency. Currency is set up when tenant is created by Astrokite team. </p>
+<h2 id="check-connection">Check connection</h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Collecting data on cloud objects can take up to 20 min. </p>
 </div>
-<p>Зайдите на страницу <strong><em>Бюджеты</em></strong>. Кликните <strong><em>Создать бюджет</em></strong>.</p>
-<p><img alt="Screenshot" src="../img/cd-budget-tree.png"/></p>
-<p>В списке должны появиться VDC и кластеры вашего облака.</p>
-<p>Если какого-либо кластера или VDC не было найдено, сообщите об этом службе поддержки.</p>
+<p>Open <strong><em>Budgets</em></strong>. Click <strong><em>Create budget</em></strong>.</p>
+<p>You should be able to see <em>clusters</em> and <em>VDC</em> of your vSphere cloud.</p>
+<p>If you do not see any of the clusters or VDC check the settings with Astrokite support team.</p>
+<p>We recommend to check consumption data in 24 hours. </p>
 </article>
 </div>
 </div>
@@ -299,13 +297,13 @@
             </div>
 </div>
 </a>
-<a aria-label="Вперед: AWS" class="md-footer__link md-footer__link--next" href="../connect-aws/" rel="next">
+<a aria-label="Вперед: Swagger" class="md-footer__link md-footer__link--next" href="../swagger/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Вперед
               </span>
-              AWS
+              Swagger
             </div>
 </div>
 <div class="md-footer__button md-icon">
